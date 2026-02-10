@@ -1,15 +1,19 @@
 package edu.icet.service.Impl;
 
+import edu.icet.model.dto.AirLineDTO;
 import edu.icet.service.AirLineService;
 
+import java.util.List;
+
 public class AirLineServiceImpl implements AirLineService {
+
     @Override
-    public void addAirLine(AirLine airline) {
+    public void addAirLine(AirLineDTO airline) {
 
     }
 
     @Override
-    public void updateAriLine(AirLine airLine) {
+    public void updateAriLine(AirLineDTO airLine) {
 
     }
 
@@ -19,12 +23,12 @@ public class AirLineServiceImpl implements AirLineService {
     }
 
     @Override
-    public AirLineList searchId(Integer id) {
+    public AirLineDTO searchId(Integer id) {
         return null;
     }
 
     @Override
-    public List<AirLine> getAll() {
-        return null;
+    public List<AirLineDTO> getAll() {
+        return List.of();
     }
 }

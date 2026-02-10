@@ -1,4 +1,4 @@
-package edu.icet.model.dto;
+package edu.icet.model.entity;
 
 import lombok.*;
 
@@ -7,7 +7,7 @@ import lombok.*;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class AirLineDTO {
+public class AirLineEntity {
 
     private String airline_id;
 
