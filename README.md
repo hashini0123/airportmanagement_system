@@ -1,52 +1,53 @@
 Airport Management System
-Ee project ondu Airport Management System agiddhu, idu vimana nildanada dinachari kelashagalannu (operations) hagu data vannu nirvahisalu sahaya madutthe. Idu prayaanigara vivara, flight schedule-galu, mathu staff nirvahanegeyagi vinyaswagide.
+The Airport Management System is a software solution designed to streamline and automate daily airport operations and data management. This system is specifically crafted to handle passenger details, flight scheduling, and staff management efficiently.
 
-📌 Features (Vaishishtayagalu)
-Flight Management: Hosa flight-galannu serisuvudu, update maduvudu hagu delete maduvudu.
+📌 Features
+Flight Management: Add, update, and delete flight information seamlessly.
 
-Passenger Registration: Prayaanigara mahithi hagu ticket booking nirvahane.
+Passenger Registration: Manage passenger data and handle ticket booking operations.
 
-Staff Management: Vimana nildanada kelasadavara vivaragala nirvahane.
+Staff Management: Organize and maintain records for all airport personnel.
 
-Schedule Tracking: Flight nirdishta samaya mathu status check maduvudu.
+Schedule Tracking: Monitor specific flight timings and real-time status updates.
 
-🛠️ Technologies Used (Thanthrajnana)
-Language: Java / Python (Nimma project ge anusaravagi badalisi)
+🛠️ Technologies Used
+Language: Java / Python (Update this based on your specific project)
 
 Database: MySQL / SQLite
 
-Interface: Console Based / GUI (Swing/Tkinter)
+Interface: Console Based / GUI (Swing or Tkinter)
 
-🚀 How to Run (Hege chalayisuvudu?)
-Repository Clone madi:
+🚀 How to Run
+Clone the Repository:
 
 Bash
 git clone https://github.com/hashini0123/airportmanagement_system.git
-Project Directory ge hogi:
+Navigate to the Project Directory:
 
 Bash
 cd airportmanagement_system
 Database Setup:
 
-Nimma local SQL server nalli database create madi.
+Create a database in your local SQL server.
 
-Project nalli iruva database script vannu run madi.
+Execute the database script provided within the project folder.
 
-Application Run madi:
+Run the Application:
 
-Nimma IDE (VS Code/IntelliJ/Eclipse) nalli project open madi Run button otti.
+Open the project in your preferred IDE (VS Code, IntelliJ, or Eclipse).
+
+Locate the main file and click the Run button.
 
 📂 Project Structure
-
+Plaintext
 ├── src/                # Source code files
-├── database/           # SQL scripts hagu DB models
+├── database/           # SQL scripts and DB models
 ├── docs/               # Documentation
 └── README.md           # Project summary
-
 🤝 Contributing
-Idu ondu open-source project. Neenu idannu innu utthamagolisalu fork madi pull request sallisabahudu.
+This is an open-source project. If you would like to improve it, feel free to fork the repository and submit a pull request.
 
 📄 License
-Ee project MIT License adiyallide.
+This project is licensed under the MIT License.
 
 Developed by: Hashini
