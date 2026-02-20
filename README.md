@@ -37,10 +37,12 @@ Application Run madi:
 Nimma IDE (VS Code/IntelliJ/Eclipse) nalli project open madi Run button otti.
 
 📂 Project Structure
+
 ├── src/                # Source code files
 ├── database/           # SQL scripts hagu DB models
 ├── docs/               # Documentation
 └── README.md           # Project summary
+
 🤝 Contributing
 Idu ondu open-source project. Neenu idannu innu utthamagolisalu fork madi pull request sallisabahudu.
 
