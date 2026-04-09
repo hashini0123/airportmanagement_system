@@ -1,9 +1,9 @@
-Spring:
+spring:
   datasource:
-    url : jdbc:mysql://localhost:3306/airportmanagement
-    username : root
-    password : 1234
+    url: jdbc:mysql://localhost:3306/airportmanagement
+    username: root
+    password: 1234
 
   jpa:
     hibernate:
-      ddl-uto:create
+      ddl-auto: update
