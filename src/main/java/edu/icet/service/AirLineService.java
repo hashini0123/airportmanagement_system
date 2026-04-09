@@ -6,10 +6,10 @@ import java.util.List;
 
 public interface AirLineService {
 
-    void addAirLine(AirLineDTO airline);
-    void updateAriLine(AirLineDTO airLine);
-    void deleteAirLine(Integer id);
-    AirLineDTO searchId(Integer id);
-    List<AirLineDTO> getAll();
+    boolean addAirLine(AirLineDTO airLineDTO);
 
+
+    boolean updateAirLine(AirLineDTO airLineDTO);
+
+    boolean deleteById(String id);
 }
