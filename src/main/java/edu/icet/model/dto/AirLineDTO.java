@@ -1,20 +1,22 @@
 package edu.icet.model.dto;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
-@Getter
-@Setter
-@ToString
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 public class AirLineDTO {
 
-    private String airline_id;
+    private Integer airlineId;
 
-    private String airline_name;
+    private String airlineName;
 
     private String country;
 
-    private String rating;
+    private double rating;
 
 }
