@@ -2,18 +2,22 @@ package edu.icet.service.Impl;
 
 import edu.icet.model.dto.AirLineDTO;
 import edu.icet.service.AirLineService;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 public class AirLineServiceImpl implements AirLineService {
 
-    @Override
-    public void addAirLine(AirLineDTO airline) {
 
+    @Override
+    public boolean addAirLine(AirLineDTO airLineDTO) {
+
+        return false;
     }
 
     @Override
-    public void updateAriLine(AirLineDTO airLine) {
+    public void updateAirLine(AirLineDTO airLineDTO) {
 
     }
 
@@ -23,7 +27,7 @@ public class AirLineServiceImpl implements AirLineService {
     }
 
     @Override
-    public AirLineDTO searchId(Integer id) {
+    public AirLineDTO serachById(Integer id) {
         return null;
     }
 
