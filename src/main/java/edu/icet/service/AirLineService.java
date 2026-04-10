@@ -8,8 +8,9 @@ public interface AirLineService {
 
     boolean addAirLine(AirLineDTO airLineDTO);
 
-
     boolean updateAirLine(AirLineDTO airLineDTO);
 
     boolean deleteById(String id);
+
+    List<AirLineDTO> getAll();
 }
