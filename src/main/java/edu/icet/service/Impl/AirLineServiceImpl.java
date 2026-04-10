@@ -22,16 +22,16 @@ public class AirLineServiceImpl implements AirLineService {
 
     @Override
     public boolean updateAirLine(AirLineDTO airLineDTO) {
-        return false;
+        return airLineRepository.updateAirLine(airLineDTO);
     }
 
     @Override
     public boolean deleteById(String id) {
-        return false;
+        return airLineRepository.deleteById(id);
     }
 
     @Override
     public List<AirLineDTO> getAll() {
-        return List.of();
+        return airLineRepository.getAll();
     }
 }
