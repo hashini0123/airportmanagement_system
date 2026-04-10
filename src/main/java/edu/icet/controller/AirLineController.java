@@ -5,6 +5,8 @@ import edu.icet.service.AirLineService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping
 @RequiredArgsConstructor
@@ -25,5 +27,10 @@ public class AirLineController {
     @DeleteMapping("/delete-by-id/{id}")
     public boolean deleteAirLine(@PathVariable String id){
         return airLineService.deleteById(id);
+    }
+
+    @GetMapping("/get")
+    public List<AirLineDTO> getAll(){
+        return airLineService.getAll();
     }
 }
