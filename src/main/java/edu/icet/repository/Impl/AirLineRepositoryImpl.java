@@ -27,7 +27,13 @@ public class AirLineRepositoryImpl implements AirLineRepository {
 
     @Override
     public boolean updateAirLine(AirLineDTO airLineDTO) {
-        return false;
+        String sql = "UPDATE airline SET airLineName = ?, country = ?, rating = ? WHERE airLineId= ?";
+        return jdbcTemplate.update(sql,
+                airLineDTO.getAirlineId(),
+                airLineDTO.getAirlineName(),
+                airLineDTO.getCountry(),
+                airLineDTO.getRating()
+                )>0;
     }
 
     @Override
