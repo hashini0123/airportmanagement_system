@@ -2,13 +2,27 @@ package edu.icet.repository.Impl;
 
 import edu.icet.model.dto.AirLineDTO;
 import edu.icet.repository.AirLineRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
+@RequiredArgsConstructor
 public class AirLineRepositoryImpl implements AirLineRepository {
+
+    private final JdbcTemplate jdbcTemplate;
+
     @Override
     public boolean addAirLine(AirLineDTO airLineDTO) {
-        return false;
+        String sql = "INSERT INTO airline (?,?,?,?)";
+        return jdbcTemplate.update(sql,
+                airLineDTO.getAirlineId(),
+                airLineDTO.getAirlineName(),
+                airLineDTO.getCountry(),
+                airLineDTO.getRating()
+                )>0;
     }
 
     @Override
