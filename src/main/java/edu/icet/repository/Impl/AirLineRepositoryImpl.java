@@ -44,6 +44,15 @@ public class AirLineRepositoryImpl implements AirLineRepository {
 
     @Override
     public List<AirLineDTO> getAll() {
-        return List.of();
+        String sql = "SELECT * FROM airline";
+        List<AirLineDTO> airLineDTOList = jdbcTemplate.query(sql, (rs, rowNum) -> {
+            AirLineDTO airLineDTO = new AirLineDTO();
+            airLineDTO.setAirlineId(Integer.valueOf(rs.getString(1)));
+            airLineDTO.setAirlineName(rs.getString(2));
+            airLineDTO.setCountry(rs.getString(3));
+            airLineDTO.setRating(Double.parseDouble(rs.getString(4)));
+            return airLineDTO;
+        });
+        return airLineDTOList;
     }
 }
