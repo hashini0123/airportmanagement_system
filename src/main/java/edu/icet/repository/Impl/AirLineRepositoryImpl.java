@@ -38,7 +38,8 @@ public class AirLineRepositoryImpl implements AirLineRepository {
 
     @Override
     public boolean deleteById(String id) {
-        return false;
+        String sql = "DELETE FROM airline WHERE airLineId=?";
+        return jdbcTemplate.update(sql,id)>0;
     }
 
     @Override
