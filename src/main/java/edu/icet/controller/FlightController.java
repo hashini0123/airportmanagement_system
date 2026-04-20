@@ -3,10 +3,7 @@ package edu.icet.controller;
 import edu.icet.model.dto.FlightDTO;
 import edu.icet.service.FlightService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping
@@ -19,4 +16,8 @@ public class FlightController {
         return flightService.addFlight(flightDTO);
     }
 
+    @PutMapping("/update")
+    public boolean updateFlight (@RequestBody FlightDTO flightDTO){
+        return flightService.updateFligh(flightDTO);
+    }
 }
