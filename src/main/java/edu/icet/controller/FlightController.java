@@ -20,4 +20,9 @@ public class FlightController {
     public boolean updateFlight (@RequestBody FlightDTO flightDTO){
         return flightService.updateFligh(flightDTO);
     }
+
+    @DeleteMapping("/delete-by-id/{id}")
+    public boolean deleteById (@PathVariable String id){
+        return flightService.deleteById(id);
+    }
 }
