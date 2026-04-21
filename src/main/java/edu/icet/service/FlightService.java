@@ -6,4 +6,6 @@ public interface FlightService {
     boolean addFlight(FlightDTO flightDTO);
 
     boolean updateFligh(FlightDTO flightDTO);
+
+    boolean deleteById(String id);
 }
