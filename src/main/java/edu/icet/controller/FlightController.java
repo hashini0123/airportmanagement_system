@@ -20,7 +20,7 @@ public class FlightController {
 
     @PutMapping("/update")
     public boolean updateFlight (@RequestBody FlightDTO flightDTO){
-        return flightService.updateFligh(flightDTO);
+        return flightService.updateFlight(flightDTO);
     }
 
     @DeleteMapping("/delete-by-id/{id}")
