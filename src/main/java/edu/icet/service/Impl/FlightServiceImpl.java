@@ -20,8 +20,8 @@ public class FlightServiceImpl implements FlightService {
     }
 
     @Override
-    public boolean updateFligh(FlightDTO flightDTO) {
-        return false;
+    public boolean updateFlight(FlightDTO flightDTO) {
+        return flightRepository.updateFlight(flightDTO);
     }
 
     @Override
